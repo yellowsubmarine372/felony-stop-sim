@@ -1,0 +1,272 @@
+# Blender 5.1.2 MTL File: 'police_car.blend'
+# www.blender.org
+
+newmtl GTO
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/gto.png
+
+newmtl Material.003
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/car body.png
+
+newmtl Material.004
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl back_light
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/back lights.png
+
+newmtl below_car
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/below car.png
+
+newmtl black
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl car_body
+Ns 467.277832
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/car body.png
+
+newmtl car_engine
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/car engines lights unknowns sirens.png
+
+newmtl front_grills
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/car engines lights unknowns sirens.png
+
+newmtl frontt_light
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/glass lights (orange).tga.png
+
+newmtl inner_car
+Ns 0.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/inner car.png
+
+newmtl inner_wheels
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/inner wheel.png
+
+newmtl light_holder
+Ns 250.000000
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/texture/front glass mesh named.png
+
+newmtl light_holder.001
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl mat0.020
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/3d mODELING/neiosis/Tex_0015_0.dds
+
+newmtl mat0.021
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/3d mODELING/neiosis/Tex_0015_0.dds
+
+newmtl mat0.038
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/gto.png
+
+newmtl mat0.050
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/3d mODELING/neiosis/Tex_0019_0.dds
+
+newmtl mat0.065
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/3d mODELING/neiosis/Tex_0019_0.dds
+
+newmtl mat0.069
+Ns 200.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+
+newmtl metal
+Ns 628.322693
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/texture/metal.tga
+
+newmtl side_mirror
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl side_tires
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/wheels.tga.png
+
+newmtl tires
+Ns 490.000000
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/tires.png
+
+newmtl transparent_glass
+Ns 360.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl wheels
+Ns 338.512390
+Ka 1.000000 1.000000 1.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3
+map_Kd /home/airlab/turtlebot3_ws/src/felony_stop_sim/models/police_car/materials/textures/wheels.tga.png
+
+newmtl windshild_side
+Ns 679.777710
+Ka 1.000000 1.000000 1.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 3

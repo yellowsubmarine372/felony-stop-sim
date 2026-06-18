@@ -1,0 +1,25 @@
+# ROS2 빌드 산출물
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Gazebo
+.gazebo/
+
+# Blender 백업
+*.blend1
+*.blend2
+
+# 큰 바이너리는 별도 관리 (필요시 git-lfs)
+# *.pgm  # 맵 이미지는 유지하는 게 좋음 (작음)

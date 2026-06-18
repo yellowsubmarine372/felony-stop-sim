@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="intersection_world">
+
+    <!-- 기본 조명 -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- 회색 바닥 (아스팔트 느낌) -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>50 50</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.3 0.3 0.3 1</ambient>
+            <diffuse>0.4 0.4 0.4 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 수평 도로 (동서 방향, 폭 4m, 길이 20m) -->
+    <model name="road_horizontal">
+      <static>true</static>
+      <pose>0 0 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>20 4 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.15 0.15 0.15 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 수직 도로 (남북 방향) -->
+    <model name="road_vertical">
+      <static>true</static>
+      <pose>0 0 0.01 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>4 20 0.02</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.15 0.15 0.15 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 도로 경계 벽 (북서 블록) -->
+    <model name="block_nw">
+      <static>true</static>
+      <pose>-6 6 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.6 0.5 0.4 1</ambient>
+            <diffuse>0.7 0.6 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 도로 경계 벽 (북동 블록) -->
+    <model name="block_ne">
+      <static>true</static>
+      <pose>6 6 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.6 0.5 0.4 1</ambient>
+            <diffuse>0.7 0.6 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 도로 경계 벽 (남서 블록) -->
+    <model name="block_sw">
+      <static>true</static>
+      <pose>-6 -6 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.6 0.5 0.4 1</ambient>
+            <diffuse>0.7 0.6 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 도로 경계 벽 (남동 블록) -->
+    <model name="block_se">
+      <static>true</static>
+      <pose>6 -6 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>8 8 1</size></box>
+          </geometry>
+          <material>
+            <ambient>0.6 0.5 0.4 1</ambient>
+            <diffuse>0.7 0.6 0.5 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- 물리 엔진 -->
+    <physics type="ode">
+      <real_time_update_rate>1000</real_time_update_rate>
+      <max_step_size>0.001</max_step_size>
+    </physics>
+
+    <!-- 카메라 시점 -->
+    <gui>
+      <camera name="user_camera">
+        <pose>0 -15 12 0 0.8 1.5708</pose>
+      </camera>
+    </gui>
+    <!-- 경찰차 1 -->
+    <include>
+      <uri>model://police_car</uri>
+      <name>police_car_1</name>
+      <pose>-0.5 1.0 0 0 0 1.5708</pose>
+    </include>
+
+    <!-- 경찰차 2 -->
+    <include>
+      <uri>model://police_car</uri>
+      <name>police_car_2</name>
+      <pose>0.5 1.0 0 0 0 1.5708</pose>
+    </include>
+  </world>
+</sdf>
+

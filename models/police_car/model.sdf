@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<sdf version="1.6">
+  <model name="police_car">
+    <static>true</static>
+
+    <link name="body">
+      <pose>0 0 0 0 0 0</pose>
+
+      <!-- 메시 비주얼 -->
+      <visual name="visual">
+        <pose>-0.12 0.08 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://police_car/meshes/police_car.obj</uri>
+            <scale>0.02 0.02 0.02</scale>
+          </mesh>
+        </geometry>
+      </visual>
+
+      <!-- 차체 collision (visual 크기에 맞춤) -->
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.25 0.12 0.08</size>
+          </box>
+        </geometry>
+        <pose>0 0 0.04 0 0 0</pose>
+      </collision>
+
+      <!-- 빨간 경광등 (시각화) -->
+      <visual name="red_light_visual">
+        <pose>-0.02 0 0.1 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.015</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>1 0 0 1</ambient>
+          <diffuse>1 0 0 1</diffuse>
+          <emissive>1 0 0 1</emissive>
+        </material>
+      </visual>
+
+      <!-- 파란 경광등 (시각화) -->
+      <visual name="blue_light_visual">
+        <pose>0.02 0 0.1 0 0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.015</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <ambient>0 0 1 1</ambient>
+          <diffuse>0 0 1 1</diffuse>
+          <emissive>0 0 1 1</emissive>
+        </material>
+      </visual>
+
+      <!-- 빨간 light source -->
+      <light name="red_light" type="point">
+        <pose>-0.02 0 0.1 0 0 0</pose>
+        <diffuse>1 0 0 1</diffuse>
+        <specular>1 0 0 1</specular>
+        <attenuation>
+          <range>5</range>
+          <linear>0.1</linear>
+          <constant>0.2</constant>
+          <quadratic>0.0</quadratic>
+        </attenuation>
+        <cast_shadows>false</cast_shadows>
+      </light>
+
+      <!-- 파란 light source -->
+      <light name="blue_light" type="point">
+        <pose>0.02 0 0.1 0 0 0</pose>
+        <diffuse>0 0 1 1</diffuse>
+        <specular>0 0 1 1</specular>
+        <attenuation>
+          <range>5</range>
+          <linear>0.1</linear>
+          <constant>0.2</constant>
+          <quadratic>0.0</quadratic>
+        </attenuation>
+        <cast_shadows>false</cast_shadows>
+      </light>
+    </link>
+
+    <!-- 경광등 점멸 플러그인 -->
+    <plugin name="flashlight_plugin" filename="libFlashLightPlugin.so">
+      <enable>true</enable>
+      <light>
+        <id>body/red_light</id>
+        <duration>0.5</duration>
+        <interval>0.5</interval>
+        <color>1 0 0</color>
+      </light>
+      <light>
+        <id>body/blue_light</id>
+        <duration>0.5</duration>
+        <interval>0.5</interval>
+        <color>0 0 1</color>
+        <enable>false</enable>
+      </light>
+    </plugin>
+  </model>
+</sdf>
+
