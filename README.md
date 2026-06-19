@@ -95,8 +95,6 @@ ros2 topic pub --once /initialpose geometry_msgs/msg/PoseWithCovarianceStamped \
 
 > 발표 영상 링크: [https://youtu.be/KvrbUIdFsjo](https://youtu.be/KvrbUIdFsjo)
 
-YouTube에 Unlisted로 업로드 예정.
-
 ## 6. AI 사용 여부 및 사용 내용
 
 본 프로젝트는 다음 영역에서 생성형 AI(Anthropic Claude)를 사용하였다.
