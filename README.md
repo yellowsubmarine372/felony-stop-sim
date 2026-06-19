@@ -24,7 +24,7 @@
 ┌────────────────┐    /camera/image_raw   ┌────────────────────────┐
 │ Gazebo World   │ ─────────────────────▶ │ RestrictedZoneDetector │
 │ + Turtlebot3   │                        │  (직접 구현 ROS2 노드)  │
-│ + 경찰차/경광등 │                        │  ① YOLOv8 bbox 추론     │
+│ + 경찰차/경광등 │                          │  ① YOLOv8 bbox 추론     │
 └────────────────┘                        │  ② HSV 빨강/파랑 필터   │
        ▲                                  │  ③ 12-프레임 점멸 판정  │
        │ /cmd_vel                         │  ④ 가상 장애물 publish  │
@@ -93,7 +93,7 @@ ros2 topic pub --once /initialpose geometry_msgs/msg/PoseWithCovarianceStamped \
 
 ## 5. 발표 영상 (YouTube)
 
-> 발표 영상 링크: [TBD — 업로드 후 추가 예정]
+> 발표 영상 링크: [https://youtu.be/KvrbUIdFsjo](https://youtu.be/KvrbUIdFsjo)
 
 YouTube에 Unlisted로 업로드 예정.
 
